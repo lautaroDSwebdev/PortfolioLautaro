@@ -1,0 +1,360 @@
+:root{
+    --bg-darkblue: #212f42;
+    --darkblue_for_little_details: #2f4057;
+  } 
+  
+  /* global classes */
+  html {
+    margin: 0;
+    scrollbar-color: #4a4949 #fff;
+    scrollbar-width: thin;
+    scroll-behavior: smooth;
+    background: #cfcaca;
+    background-color: var(--bg-darkblue);
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    background: radial-gradient(circle, rgb(92, 128, 175) -35%, #212f42 72%);
+    background-attachment: fixed;
+  }
+  
+  
+  .blue_strong-bg{
+    background-color: var(--bg-darkblue);
+  }
+  .blue-light-bg{
+    background-color: #3E5879;
+    background: rgb(87,124,172);
+    background: radial-gradient(circle, rgb(53, 74, 102) 15%, #212f42 42%);
+    background-attachment: fixed;
+  }
+  .blue-bg-very-strong{
+    background-color: var(--darkblue_for_little_details);
+  }
+  
+  .form-inputs-style{
+    background-color: var(--darkblue_for_little_details);
+    color: #F5EFE7;
+    &::placeholder{
+      color: #F5EFE7;
+    }
+    &:focus{
+      background-color: #577cac;
+    }
+    &:hover{
+      background-color: #577cac;
+    }
+  }
+  
+  
+  .color-skin-strong-bg{
+  background-color: #D8C4B6;
+  }
+  .color-skin-light-bg{
+  background-color: #F5EFE7;
+  }
+  .texts-white{
+    color: #F5EFE7;
+  }
+  
+  
+  .buttons {
+    cursor: pointer;
+    padding: .6em;
+    font-size: 1em;
+    text-align: center;
+    width: 7em;
+    aspect-ratio: 1/0.25;
+    color: white;
+    background: #212121;
+    background-size: cover;
+    background-blend-mode: overlay;
+    border-radius: 0.5em;
+    outline: 0.1em solid #353535;
+    border: 0;
+    box-shadow: 0 0 1em 1em rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease-in-out;
+    position: relative;
+  }
+  
+  .buttons:hover {
+    transform: scale(1.1);
+    box-shadow: 0 0 1em 0.45em rgba(0, 0, 0, 0.1);
+    background: linear-gradient(45deg, #212121, #252525);
+    background: radial-gradient(
+      circle at bottom,
+      rgba(50, 100, 180, 0.5) 10%,
+      #212121 70%
+    );
+    outline: 0;
+  }
+  
+  
+  div {
+    margin: 0;
+  }
+  
+  .max-width-container{
+    /* full  wide */
+    max-width: 1210px;
+    @media screen and (width < 800px) {
+      max-width: 700px;
+      
+    }
+  }
+  textarea {
+    resize: vertical;
+    min-height: 2rem;
+    width: auto;
+    padding-left: 1rem;
+  }
+  p {
+    margin-block-start: 0;
+    margin-block-end: 0;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+  }
+  h3 {
+    text-shadow: 2px 4px 10px #282626;
+  }
+  b {
+    color: #ffffff;
+  
+    text-shadow: 1px 3px 5px #282626;
+  }
+  
+  /* Specific Classes */
+  .my_selfie_style{
+    border-radius: 46px;
+    height: auto;
+    width: 312px;
+    padding: 1rem;
+  }
+  .bg-yoCodeando {
+    /* por si quiero usar el fondo, queda guardado este */
+    /* background-image: url('https://images.pexels.com/photos/943096/pexels-photo-943096.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1'); */
+    background-image: url('./backgroundHeader.webp');
+  }
+  
+  
+  
+  a , p, h2, h1, h5, h6, h3, h4, b {
+    color: #fff;
+  }
+  /* interaccion con el nav bar mobile */
+  .nav-mobile {
+    visibility: hidden;
+  }
+  .nav-mobile.active {
+    visibility: visible;
+  }
+  
+  .z-index-menor {
+    z-index: 500;
+  }
+  .z-index-sup {
+    z-index: 900;
+  }
+  
+  
+  
+  
+  .claseEmail,
+  .claseTexto,
+  .claseTextArea,
+  .claseTel,
+  button {
+    margin: 1rem 0.5rem;
+    border-radius: 9px;
+    border-bottom: solid #2f2e2e 2px;
+    box-shadow: 0px 2px 7px #2f2e2e;
+    font-size: 1.5rem;
+    min-height: 3rem;
+    padding-left: 1rem;
+  }
+  
+  
+  .shadow-tech {
+    box-shadow: 0px 6px 7px #2f2e2e;
+  }
+  .box-shadow-tech {
+    box-shadow: -1px 6px 14px #282626;
+  }
+  .box-shadow-form {
+    box-shadow: -1px 6px 14px #282626;
+  }
+  .shadow-tech-desk {
+    box-shadow: 0px 6px 7px #2f2e2e;
+  }
+  .footer-gradient {
+    background-image: linear-gradient(
+      135deg,
+      #4d4dad 26%,
+      rgba(97, 184, 255, 1) 74%
+    );
+  }
+  .box-shadow-aboutme {
+    box-shadow: -1px 6px 14px rgb(40, 38, 38);
+  }
+  
+  
+  .dimensiones-cajas-tech {
+    min-width: 5rem;
+  }
+  .ancho-imagenes-tech {
+    height: auto;
+    max-width: 26rem;
+    padding: 5px;
+  }
+  
+  .backGradient {
+    background-image: radial-gradient(
+      circle,
+      rgb(0 106 211) 72%,
+      rgba(53, 122, 192, 0.28) 90%
+    );
+  }
+  .backGradient2 {
+    background-image: radial-gradient(
+      circle,
+      rgb(24 40 159) 72%,
+      rgba(53, 122, 192, 0.28) 90%
+    );
+  }
+  /* estilos del boton animado */
+  .botonn {
+    position: relative;
+    padding: 10px 20px;
+    border-radius: 7px;
+    border: 1px solid rgb(61, 106, 255);
+    font-size: 14px;
+    text-transform: uppercase;
+    font-weight: 600;
+    letter-spacing: 2px;
+    background: transparent;
+    color: #fff;
+    overflow: hidden;
+    box-shadow: 0 0 0 0 transparent;
+    -webkit-transition: all 0.2s ease-in;
+    -moz-transition: all 0.2s ease-in;
+    transition: all 0.2s ease-in;
+  }
+  
+  .botonn:hover {
+    background: rgb(61, 106, 255);
+    box-shadow: 0 0 30px 5px rgba(0, 142, 236, 0.815);
+    -webkit-transition: all 0.2s ease-out;
+    -moz-transition: all 0.2s ease-out;
+    transition: all 0.2s ease-out;
+  }
+  
+  .botonn:hover::before {
+    -webkit-animation: sh02 0.5s 0s linear;
+    -moz-animation: sh02 0.5s 0s linear;
+    animation: sh02 0.5s 0s linear;
+  }
+  .g-titles-sections{
+    padding-top: 1rem;
+    @media screen and (width> 760px) {
+      padding-top: 6rem;
+      
+    }
+  }
+  .botonn::before {
+    content: "";
+    display: block;
+    width: 0px;
+    height: 86%;
+    position: absolute;
+    top: 7%;
+    left: 0%;
+    opacity: 0;
+    background: #fff;
+    box-shadow: 0 0 50px 30px #fff;
+    -webkit-transform: skewX(-20deg);
+    -moz-transform: skewX(-20deg);
+    -ms-transform: skewX(-20deg);
+    -o-transform: skewX(-20deg);
+    transform: skewX(-20deg);
+  }
+  
+  @keyframes sh02 {
+    from {
+      opacity: 0;
+      left: 0%;
+    }
+  
+    50% {
+      opacity: 1;
+    }
+  
+    to {
+      opacity: 0;
+      left: 100%;
+    }
+  }
+  
+  .botonn:active {
+    box-shadow: 0 0 0 0 transparent;
+    -webkit-transition: box-shadow 0.2s ease-in;
+    -moz-transition: box-shadow 0.2s ease-in;
+    transition: box-shadow 0.2s ease-in;
+  }
+  
+  /* Todo esto son las animaciones de la nueva caracteristica de css, todavia no está en todos los navegadores */
+  
+  
+  @keyframes animationEffect {
+    0%{
+        transform: scale(1.0);
+      }
+      50%{
+        transform: scale(1.2);
+      }
+      100%{
+        transform: scale(1.0);
+      }
+  
+    }
+    .animations_icons{
+        font-size: 1.5rem;
+        @media (width > 800px) {
+          &:hover{
+            /* animation: name duration timing-function delay iteration-count direction fill-mode; */
+            animation: animationEffect 1s infinite ;
+            animation-delay: 0s;
+            color: #dadada;
+          }
+          
+          
+        }
+    }
+  .navbar-mobile-styles{
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-around;
+    height: 43px;
+    align-items: center;
+    background: #0d0a0ad9;
+    @media screen and (width >768px) {
+      display: none;
+    }
+  }
+  .title_aboutme{
+    padding: 20px 0;
+    font-size: 3rem;
+    /* background-color: red; */
+    font-weight: 900;
+    background: linear-gradient(146deg, #f9f9f9, #4c00fc);
+    background-size: 100%;
+    background-repeat: no-repeat;
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+    -webkit-text-stroke: #ffffff 1px;
+    @media screen and (width < 760px) {
+      
+      font-size: 2rem;
+    }
+  }
