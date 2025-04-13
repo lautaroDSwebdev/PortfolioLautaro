@@ -12,11 +12,16 @@ export const navbar = [
     },
     {
       id: 2,
+      href: "#tech",
+      navOption: "Tecnologias"
+    },
+    {
+      id: 3,
       href: "#sobremi",
       navOption: "Sobre Mi"
     },
     {
-      id: 3,
+      id: 4,
       href: "#contacto",
       navOption: "Contacto"
     }

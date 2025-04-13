@@ -1,4 +1,4 @@
-import { Header, NavComponent, Navbar, Projects, TitleProjects } from "./components"
+import { Header, NavComponent, Navbar, Projects, TechKnowledge, TitleProjects } from "./components"
 
 export const App = () => { 
     const $app = document.querySelector<HTMLDivElement>(".app")!
@@ -8,5 +8,6 @@ export const App = () => {
     $app.appendChild(Header())
     $app.appendChild(TitleProjects())
     $app.appendChild(Projects())
+    $app.appendChild(TechKnowledge())
     
  }  

@@ -1,6 +1,7 @@
 :root{
     --bg-darkblue: #212f42;
     --darkblue_for_little_details: #2f4057;
+
   } 
   
   /* global classes */
@@ -16,7 +17,13 @@
     background-attachment: fixed;
   }
   
-  
+ 
+  .title_project{
+    display: flex;
+    justify-content: center;
+    font-size: 25px;
+    padding: 4px;
+  }
   .blue_strong-bg{
     background-color: var(--bg-darkblue);
   }
@@ -25,11 +32,14 @@
     background: rgb(87,124,172);
     background: radial-gradient(circle, rgb(53, 74, 102) 15%, #212f42 42%);
     background-attachment: fixed;
+    padding: 1rem;
   }
   .blue-bg-very-strong{
     background-color: var(--darkblue_for_little_details);
   }
-  
+  .g-rounded{
+    border-radius: 0.75rem;
+  }
   .form-inputs-style{
     background-color: var(--darkblue_for_little_details);
     color: #F5EFE7;
@@ -95,7 +105,9 @@
   .max-width-container{
     /* full  wide */
     max-width: 1210px;
+    margin: auto;
     @media screen and (width < 800px) {
+      padding: 1rem;
       max-width: 700px;
       
     }
@@ -201,6 +213,7 @@
   }
   .ancho-imagenes-tech {
     height: auto;
+    width: 77px;
     max-width: 26rem;
     padding: 5px;
   }
@@ -253,8 +266,14 @@
   }
   .g-titles-sections{
     padding-top: 1rem;
+    color: #fff;
+    font-size: 44px;
+    margin: 2rem 0;
+    font-weight: bold;
+    line-height: 5px;
     @media screen and (width> 760px) {
       padding-top: 6rem;
+      font-size: 3rem;
       
     }
   }

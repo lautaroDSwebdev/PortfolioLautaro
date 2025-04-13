@@ -45,7 +45,6 @@ export const Header = () => {
             <section class="section-flecha"></section>
         </div>
     `
-    console.log(header)
     return header
 
 

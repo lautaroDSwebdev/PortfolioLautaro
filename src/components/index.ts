@@ -1,4 +1,4 @@
-export * from './aboutMe';
+export * from './TechKnowledge';
 export * from './contact';
 export * from './experience';
 export * from './header';

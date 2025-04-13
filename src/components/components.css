@@ -103,7 +103,10 @@
   justify-content: space-evenly;
   gap: 1rem;
   padding-top: 6rem;
-
+  svg {
+    height: 46px;
+    width: auto;
+  }
   @media (min-width: 768px) {
     padding-top: 2rem;
   }
@@ -139,17 +142,6 @@
   width: 100%;
 }
 
-.g-titles-sections {
-  font-weight: bold;
-  letter-spacing: 5px;
-  font-size: 2rem;
-  color: var(--titles-section-color);
-
-  @media (min-width: 768px) {
-    font-size: 3rem;
-  }
-}
-
 .contenedor-proyectos {
   background-color: var(--blue-light-bg);
   box-shadow: var(--shadow-tech-desk);
@@ -167,32 +159,23 @@
   position: relative;
   top: 5px;
 }
-
+.grid-projects{
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(10rem, 1fr));
+  gap: 3rem;
+  justify-content: center;
+}
 .item-proyecto {
-  margin-left: auto;
-  margin-right: auto;
-  padding-top: 1rem;
-  padding-bottom: 1rem;
-
-  @media (min-width: 768px) {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-  }
-
+  margin:0 auto;
+  padding: 1rem;
   .imagen-proyecto {
-    @media (min-width: 768px) {
-      grid-column: span 2;
-    }
-
     a img {
-      padding-left: 0.75rem;
-      padding-right: 0.75rem;
+      padding:0 0.75rem;
       transition: all 75ms linear;
+      height: 130px;
       width: 350px;
-      margin-left: auto;
-      margin-right: auto;
-      max-height: var(--maximoAlto-img);
-
+      max-width: 268px;
+      margin:0 auto;
       @media (min-width: 768px) {
         cursor: pointer;
       }
@@ -214,14 +197,10 @@
     gap: 0.75rem;
     width: auto;
     height: auto;
-
-    .tecnologia {
-      background-color: var(--blue-bg-very-strong);
-      border-radius: 0.75rem;
-      padding: 0.5rem;
-      text-align: center;
-      color: #fff;
-      font-size: 1rem;
+    p {
+      border-radius: 5px;
+      padding: 5px;
+      cursor: not-allowed;
     }
   }
 
@@ -230,5 +209,45 @@
     display: flex;
     justify-content: space-evenly;
     gap: 0.25rem;
+  }
+}
+.section_tech {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+}
+.g-div-title-section > * {
+  margin: 2rem 0;
+  font-weight: bold;
+  letter-spacing: 5px;
+  @media (width >800px) {
+    font-size: 3rem;
+  }
+}
+.article_arraytech {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(12rem, 1fr));
+  justify-content: center;
+  margin: auto;
+  gap: 30px;
+  padding:16px ;
+  p {
+    text-align: center;
+    font-weight: bold;
+    font-size: 1rem;
+    color: #fff;
+  }
+  .p_padding{
+    padding: 0.25rem;
+  }
+  section {
+    display: flex;
+    justify-content: center;
+    flex-flow: column;
+    border-radius: 0.75rem;
+    .div_img-tech {
+      display: flex;
+      justify-content: center;
+    }
   }
 }
