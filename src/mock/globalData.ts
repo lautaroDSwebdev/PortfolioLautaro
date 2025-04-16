@@ -79,7 +79,7 @@ export let dataApp = {
         id: 0,
         linkRepo: 'https://github.com/lautaroDSwebdev/farmacia_replica',
         linkweb: 'https://masfarmaciareplica.netlify.app/',
-        tituloProyecto: 'Mas Farmacias replica',
+        tituloProyecto: 'Farmacia replica',
         en_proceso: false,
         imagenProyecto: './farmacia.webp',
         TechUsada: [
@@ -154,7 +154,7 @@ export let dataApp = {
         linkRepo:
           'https://github.com/lautaroDSwebdev/prueba-tecnica-buscadorPerfilGitHub',
         linkweb: 'https://prueba-tecnica-lautaro.netlify.app/',
-        tituloProyecto: 'Buscador de cuenta Github',
+        tituloProyecto: 'Buscador  Github',
         en_proceso: false,
         imagenProyecto: './vista-desktop-mobile-githubsearch.webp',
         TechUsada: [
@@ -193,10 +193,10 @@ export let dataApp = {
         tituloProyecto: 'Mi Portfolio',
         imagenProyecto: './portfolio2025.webp',
         TechUsada: [
-          { id: 1, nombre: 'React js' },
+          { id: 1, nombre: 'TypeScript' },
           {
             id: 2,
-            nombre: 'Tailwind'
+            nombre: 'CSS'
           },
           {
             id: 4,

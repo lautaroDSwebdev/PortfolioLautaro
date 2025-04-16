@@ -251,3 +251,89 @@
     }
   }
 }
+/* My experience component */
+.article_myexperience{
+  border-radius: 2.4rem ;
+  margin:0 auto;
+  width: 100%;
+  position: relative;
+  top: 5rem;
+  margin-bottom: 13rem;
+  div{
+    margin:0 auto;
+    width: 100%;
+    @media (width > 800px) {
+      display: grid;
+      grid-template-columns: repeat(3,1fr);
+    }
+  }
+}
+.subarticle_myexperience{
+  display: flex;
+  justify-content: center;
+  padding: 23px ;
+  width: 100%;
+  text-align: center;
+  @media (width > 800px) {
+    padding: 1.6rem ;
+    grid-column: span 2 / span 2;
+  }
+  div{
+    font-size: 1.2rem ;
+    width: 700px;
+    line-height: 2rem /* 32px */;
+    display: flex;
+    flex-flow: column;
+    gap: 2rem;
+    font-weight: bold;
+    @media (width > 800px) {
+      font-size: 24px;
+    }
+    b , p{
+      line-height: 30px;
+      letter-spacing: 2px;
+    }
+    i{
+      color: #dbf537;
+    }
+  }
+}
+.article_img{
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  padding: 25px 0;
+  align-content: center;
+  flex-grow: 1;
+}
+
+/* Compoente contacto, clipboard */
+.button_clip{
+  cursor: pointer;
+}
+
+.section_contact{
+  display: flex;
+  justify-content: center;
+  height: 30vh;
+  align-items: center;
+  input{
+    font-size: 1rem ;
+    color: #e9e4e4;
+    display: none;
+  }
+  svg{
+    height: auto;
+    width: 64px;
+    cursor: pointer;
+  }
+}
+
+/* Clipboard con animacion */
+
+/* From Uiverse.io by gharsh11032000 */ 
+/* This is an example, feel free to delete this code */
+.section_contact{
+  height: 30vh;
+  display: flex;
+}

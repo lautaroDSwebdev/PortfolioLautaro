@@ -6,10 +6,8 @@ export const Projects = () => {
     const $section = document.createElement("section")
 
     $section.classList.add("g-rounded", "grid-projects", "max-width-container")
-    $section.innerHTML = `
-                ${proyectos.map(e =>
-        `
-                    <article class="item-proyecto shadow-tech-desk blue-light-bg">
+    $section.innerHTML = /*html*/ `
+                ${proyectos.map(e => `<article class="item-proyecto shadow-tech-desk blue-light-bg">
                         <div class="imagen-proyecto">
                             <a target="_blank" href="${e.linkweb}">
                             <img
